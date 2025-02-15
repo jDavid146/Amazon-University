@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device=width, initial-scale=1.0">
+        <title>
+            
+         Amazon Unversity Website Design  
+        </title>
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body >
+        <section class="header" >
+            <nav>
+                <a href="indext.html"><img src="logo.jpg"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hidenMenu()"></i>
+                    <ul>
+                        <li><a href="home page.html">HOME</a></li>
+                        <li><a href="About us.html">ABOUT</a></li>
+                        
+                        <li><a href="conctact us.html">CONTACT</a></li>
+
+
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <hi>Word's Biggest University</hi>
+            <p>Making website is now one of the easiest thing inthe world. You just need to learn HTML, CSS,<br> Javascript and you are  good to go.</p>
+            <a href="" class="hero-btn">Vist Us To know More</a>
+        </div>
+        </section>
+        <section class="course">
+            <hi>Courses We Offer</hi>
+        <p>This unversity offers avariaty of courses like:&bull;Bussines Management.&bull;ICT teaching.&bull;Softare Enginnering&bull;machine Learning&bull;AI programming.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Keep pushing foward . At the Intermediatest age, you have built a strong foundation , but the real challenge is to stay cosistent and push past plateaus. Try to practiceRegular apply what you lwarn is real sitiuations, and don,tbe afraid to mistakes. Stay curious, challenge yourself wiith slightLy harder materials, and track your progress. You are closer to mastery than you think.<h4>courses we give </hi4></p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Dear Degree Students,<br>Your journey through university is a crucial peroid to growth , learnning , and self-discovery . It is a time to acquire kwonledge, develop crutical thinking , and build skills that shapes your future. Stay focused, be displined , and make the most of opportunity..</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Compeleting your postgraduate studies is a remarkable accomplishment that reflects your dedication, perseverance, and passion for learning . this milestoone is not just a testament to your hard work but also a gateway to new opportunities and adventures. .</p>
+            </div>
+
+        </div>
+     </section>
+     <h2>&nbsp;</h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    </body>
+
+     </html>
